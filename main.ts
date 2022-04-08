@@ -1,5 +1,4 @@
 input.onButtonPressed(Button.A, function () {
-    count = 10
     while (count > -1) {
         basic.pause(1000)
         basic.showIcon(IconNames.Happy)
@@ -53,4 +52,12 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 let count = 0
-count = 0
+count = 10
+basic.showString("Hot Potato")
+basic.showLeds(`
+    . # . . .
+    # . # . .
+    # # . # #
+    # . . . #
+    . # # # .
+    `)
